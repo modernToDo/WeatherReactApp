@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+.container {
+  background-color: rgb(61, 47, 141);
+  color: white;
+  width: 30%;
+  margin: 5rem auto;
+  border-radius: 10px;
+  padding:5px 20px 20px;
+  overflow: hidden;
+  background-color: rgb(253, 250, 250);
+}
+.container h2{
+  text-align: center;
+}
+.search {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.search input {
+  flex-grow: 1;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 3px;
+  border: none;
+  outline: 0;
+}
+.search button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 3px;
+  border: none;
+  transition: all 0.5s;
+}
+.search button:hover {
+  cursor: pointer;
+  background-color: rgb(194, 216, 235);
+}
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 23px;
+  row-gap: 5px;
+}
+article img{
+  width: 200px;
+  margin: 30px 0;
+}
+.conditions {
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+  margin-top: 30px;
+}
+.wind,
+.humidity {
+  display: flex;
+  flex-direction: column;
+}
+.wind >span:last-child,
+.humidity> span:last-child {
+  margin-left: 35px;
+  font-size: 16px;
+  color: rgb(188, 202, 213);
+}
+.wind span:first-child,
+.humidity span:first-child {
+  display: inline-flex;
+  align-items: center;
+ column-gap: 5px;
+}
+.navs{
+  display: flex;
+ justify-content: space-between;
+}
+.links {
+color: white;
+font-size: 17px;
+text-decoration: none;
+}
+
+.hourContainer::-webkit-scrollbar{
+display: none;
+}
