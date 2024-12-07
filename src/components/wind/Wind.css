@@ -1,0 +1,38 @@
+
+.wind_high{
+     color: rgb(196, 198, 200)
+}
+.wind_high strong{
+color: aliceblue
+}
+.windContainer {
+  display: flex;
+  column-gap: 25px;
+  margin-top: 20px;
+ overflow-x: auto;
+}
+.wind_details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}
+.wind_details span:first-of-type{ 
+color: rgb(226, 227, 228)
+}
+.windContainer::-webkit-scrollbar{
+display: none;
+}
+
+.NE{
+transform: rotateX(45deg);
+}
+.SE{
+transform: rotateX(135deg);
+}
+.SW{
+transform: rotateX(225deg);
+}
+.NW{
+transform: rotateX(315deg);
+}

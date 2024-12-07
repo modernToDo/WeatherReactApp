@@ -1,0 +1,25 @@
+.humid_average {
+  color: rgb(196, 198, 200);
+}
+.humid_average strong {
+  color: aliceblue;
+}
+.humidityContainer {
+  display: flex;
+  column-gap: 24px;
+  margin-top: 20px;
+  overflow-x: auto;
+}
+.humidityContainer::-webkit-scrollbar {
+  display: none;
+}
+.humid_details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
+}
+.humid_details span:first-of-type {
+  color: rgb(226, 227, 228);
+}
+

@@ -1,0 +1,16 @@
+
+.hourContainer {
+  display: flex;
+  column-gap: 22px;
+  margin-top: 20px;
+ overflow-x: auto;
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: -40px;
+}
+.hourContainer::-webkit-scrollbar{
+display: none;
+}

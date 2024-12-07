@@ -1,0 +1,25 @@
+.prec_amount {
+  color: rgb(196, 198, 200);
+}
+.prec_amount strong {
+  color: aliceblue;
+}
+.precContainer {
+  display: flex;
+  column-gap: 22px;
+  margin-top: 20px;
+  overflow-x: auto;
+}
+.precContainer::-webkit-scrollbar {
+  display: none;
+}
+.prec_details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: -40px;
+}
+.prec_details span:first-of-type {
+  margin-bottom: 7px;
+  color: rgb(226, 227, 228);
+}

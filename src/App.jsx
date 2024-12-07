@@ -1,15 +1,10 @@
-import { useState } from 'react'
 
-import './App.css'
-//import WeatherApp from './components/weatherApp'
-import Weather2 from './components/weather2'
+import Weather2 from './components/weather/Weather2'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-    <Weather2/>
+      <Weather2 />
     </>
   )
 }

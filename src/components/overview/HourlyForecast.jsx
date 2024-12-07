@@ -1,37 +1,20 @@
 import React  from "react";
+import "./HourlyForecast.css"
 
 const HourlyForecast = ({ dataToSend ,states}) => {
   if (!dataToSend) {
     return;
   }
   const hour = new Date().getHours().toString().padStart(2, "0");
-  const min = new Date().getMinutes().toString().padStart(2, "0");
-  const now=`${hour}:${min}`
   const hourlyForecast = dataToSend.forecast.forecastday[0].hour;
   const HourlyArray = [
     ...hourlyForecast.slice(hour),...hourlyForecast.slice(0,hour)
   ]
   return (
     <>
-      <div
-        className="hourContainer"
-        style={{
-          display: "flex",
-          columnGap: "22px",
-          marginTop: "20px",
-          overflowX: "auto",
-        }}
-      >
+      <div className="hourContainer">
         {HourlyArray.map((hr, i) => (
-          <div
-            key={i}
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              rowGap: "-40px",
-            }}
-          >
+          <div key={i} className="details">
             <span>
               {hr.time.split(" ")[1].split(":")[0] == hour
                 ? "Now"
@@ -39,9 +22,9 @@ const HourlyForecast = ({ dataToSend ,states}) => {
             </span>
             <img src={hr.condition.icon} width="50px" />
             <span>
-              {states.celsius
+              {states.yemun
                 ? Math.round(hr.temp_c)+"°"
-                : states.fahrenheit
+                : states.rumi
                 ? Math.round(hr.temp_f)+"°"
                 : Math.round(hr.temp_c) + "°"}
             </span>
